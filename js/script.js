@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     let $page = $('html, body');
     $('a.scroll').click(function() {
         $page.animate({
@@ -20,7 +21,6 @@ $(document).ready(function () {
 
             }
         });
-    // }
 
 
     /*TARIFFS FLIP*/
@@ -29,14 +29,10 @@ $(document).ready(function () {
     $('.flipper').on('click', function () {
         $(this).toggleClass("flipper-active");
 
-    })
+    });
+
     // ABOUT TABS
 
-
-    // $(".nav-link1").hover(function(){
-    //     $(".nav-link1").removeClass("active-nav");
-    //     $(this).addClass("active-nav");
-    // });
 
     $("#v-pills-feed1-tab").hover(function(){
         $(".tabs-info__item").removeClass("active-feed");
@@ -59,8 +55,7 @@ $(document).ready(function () {
         $('.navbar-toggler').addClass('collapsed');
     });
 
-
-})
+});
 
 /*RANGE*/
 
@@ -99,13 +94,13 @@ let calcTabImg2 = document.querySelector('#v-pills-india img');
 /* Начало редактируемых переменных*/
 
 // Цены за размещение и количество потребляемой электроэнергии
-let objects = [
+const objects = [
     {
       // Antminer S9
-        cost1: 1290,
-        cost2: 1090,
-        cost3: 990,
-        kwt: 35
+      cost1: 1290,
+      cost2: 1090,
+      cost3: 990,
+      kwt: 35
     },
     {
       // Ibelink X11
@@ -158,10 +153,10 @@ let objects = [
     },
     {
       // GPU 1 кВт
-        cost1: 1590,
-        cost2: 1390,
-        cost3: 1290,
-        kwt: 24
+      cost1: 1590,
+      cost2: 1390,
+      cost3: 1290,
+      kwt: 24
     }
 ];
 
